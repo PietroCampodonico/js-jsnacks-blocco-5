@@ -79,25 +79,25 @@ var listaOrtaggi = [
 ]
 
 //Divido in due array le zucchine
-var zucchinePiccole = [];
+var zucchineCorte = [];
 
 for (i = 0; i < listaOrtaggi.length; i++) {
     
     if (listaOrtaggi[i].lunghezza < 15) {
-        zucchinePiccole.push(listaOrtaggi[i]);
+        zucchineCorte.push(listaOrtaggi[i]);
         listaOrtaggi.splice(i, 1);
         i--
     }
 }
 
-var zucchineGrandi = listaOrtaggi;
+var zucchineLunghe = listaOrtaggi;
 
 //Stampo i pesi dei due array
-var pesoZucchinePiccole = 0;
-var pesoZucchineGrandi = 0
+var pesoZucchineCorte = 0;
+var pesozucchineLunghe = 0
 
-console.log(zucchineGrandi);
-console.log(zucchinePiccole);
-pesaturaVerdura(zucchineGrandi, pesoZucchinePiccole);
-pesaturaVerdura(zucchinePiccole, pesoZucchineGrandi)
+console.log(zucchineLunghe);
+console.log(zucchineCorte);
+console.log("Le zucchine corte pesano complessivamente: ", pesaturaVerdura(zucchineCorte, pesoZucchineCorte));
+console.log("Le zucchine lunghe pesano complessivamente: ", pesaturaVerdura(zucchineLunghe, pesozucchineLunghe));
 

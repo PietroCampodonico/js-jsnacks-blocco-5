@@ -7,7 +7,7 @@ function pesaturaVerdura(arrayOrtaggi, pesOrtaggio) {
         pesOrtaggio += arrayOrtaggi[i].peso;
     }
 
-    return console.log(pesOrtaggio + "g")
+    return (pesOrtaggio + "g")
 }
 
 var listaOrtaggi = [
@@ -85,4 +85,4 @@ var listaOrtaggi = [
 
 var pesoZucchine = 0;
 
-pesaturaVerdura(listaOrtaggi, pesoZucchine)
+console.log("Le zucchine pesano complessivamente ", pesaturaVerdura(listaOrtaggi, pesoZucchine))
