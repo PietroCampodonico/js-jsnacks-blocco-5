@@ -2,6 +2,14 @@
 Crea 10 oggetti che rappresentano una zucchina, indicandone per ognuno varietà,
 peso e lunghezza.Calcola quanto pesano tutte le zucchine.*/
 
+function pesaturaVerdura(arrayOrtaggi, pesOrtaggio) {
+    for (var i = 0; i < arrayOrtaggi.length; i++) {
+        pesOrtaggio += arrayOrtaggi[i].peso;
+    }
+
+    return console.log(pesOrtaggio + "g")
+}
+
 var listaOrtaggi = [
     zucchina1 = {
         varietà: "a",
@@ -77,8 +85,4 @@ var listaOrtaggi = [
 
 var pesoZucchine = 0;
 
-for (var i = 0; i < listaOrtaggi.length; i++) {
-    pesoZucchine += listaOrtaggi[i].peso; 
-}
-
-console.log(pesoZucchine + "g")
+pesaturaVerdura(listaOrtaggi, pesoZucchine)
