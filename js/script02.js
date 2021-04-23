@@ -3,6 +3,8 @@ Crea 10 oggetti che rappresentano una zucchina.
 Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 Infine stampa separatamente quanto pesano i due gruppi di zucchine.*/
 
+
+//Creo 10 oggetti
 var listaOrtaggi = [
     zucchina1 = {
         varietà: "a",
@@ -76,8 +78,8 @@ var listaOrtaggi = [
     },
 ]
 
+//Divido in due array le zucchine
 var zucchinePiccole = [];
-
 
 for (i = 0; i < listaOrtaggi.length; i++) {
     
@@ -88,11 +90,14 @@ for (i = 0; i < listaOrtaggi.length; i++) {
     }
 }
 
-var pesoZucchinePiccole = 0;
-var pesoListaOrtaggi = 0
+var zucchineGrandi = listaOrtaggi;
 
-console.log(listaOrtaggi);
+//Stampo i pesi dei due array
+var pesoZucchinePiccole = 0;
+var pesoZucchineGrandi = 0
+
+console.log(zucchineGrandi);
 console.log(zucchinePiccole);
-pesaturaVerdura(listaOrtaggi, pesoZucchinePiccole);
-pesaturaVerdura(zucchinePiccole, pesoListaOrtaggi)
+pesaturaVerdura(zucchineGrandi, pesoZucchinePiccole);
+pesaturaVerdura(zucchinePiccole, pesoZucchineGrandi)
 
